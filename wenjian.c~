@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+  FILE* fp;
+  char ch,filename[10];
+  printf("qing shu ru zhong wen ");
+  scanf("%s",filename);
+  if((fp=fopen(filename,"w"))==NULL)
+    {
+      printf("can non't open this 
